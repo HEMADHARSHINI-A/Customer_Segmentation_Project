@@ -1,39 +1,63 @@
 // Revenue Trend
 
-new Chart(
-document.getElementById("revenueChart"),
-{
-type:"line",
+const revenueCtx =
+document.getElementById("revenueChart");
 
-data:{
-labels:["Jan","Feb","Mar","Apr","May","Jun"],
+new Chart(revenueCtx, {
 
-datasets:[{
-label:"Revenue",
+type: "line",
 
-data:[12000,18000,15000,22000,25000,30000],
+data: {
 
-borderColor:"#ff6b35",
+labels: [
+"Jan",
+"Feb",
+"Mar",
+"Apr",
+"May",
+"Jun"
+],
 
-backgroundColor:"rgba(255,107,53,.2)",
+datasets: [{
 
-fill:true,
+label: "Revenue",
 
-tension:.4
+data: [
+12000,
+18000,
+15000,
+22000,
+26000,
+30000
+],
+
+borderColor: "#6d28d9",
+
+backgroundColor:
+"rgba(109,40,217,0.2)",
+
+fill: true,
+
+tension: 0.4
+
 }]
 }
-}
-);
+
+});
+
 
 // Customer Segments
 
-new Chart(
-document.getElementById("segmentChart"),
-{
-type:"doughnut",
+const segmentCtx =
+document.getElementById("segmentChart");
 
-data:{
-labels:[
+new Chart(segmentCtx, {
+
+type: "bar",
+
+data: {
+
+labels: [
 "Champions",
 "Loyal",
 "Potential",
@@ -41,17 +65,27 @@ labels:[
 "Lost"
 ],
 
-datasets:[{
-data:[35,25,20,12,8],
+datasets: [{
 
-backgroundColor:[
-"#ff6b35",
-"#4f46e5",
-"#10b981",
+label: "Customers",
+
+data: [
+1500,
+1300,
+1000,
+700,
+400
+],
+
+backgroundColor: [
+"#6d28d9",
+"#8b5cf6",
+"#3b82f6",
 "#f59e0b",
 "#ef4444"
 ]
+
 }]
 }
-}
-);
+
+});
