@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Customer Segmentation</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+<h2>📊 RFM Dashboard</h2>
+</div>
+
+<ul>
+
+<li>
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</a>
+</li>
+
+<li>
+<a href="demographics.html">
+<i class="fa-solid fa-users"></i>
+Demographics
+</a>
+</li>
+
+<li class="active">
+<a href="segmentation.html">
+<i class="fa-solid fa-chart-pie"></i>
+Segmentation
+</a>
+</li>
+
+<li>
+<a href="details.html">
+<i class="fa-solid fa-table"></i>
+Customer Details
+</a>
+</li>
+
+<li>
+<a href="insights.html">
+<i class="fa-solid fa-lightbulb"></i>
+Insights
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<h1>Customer Segmentation (RFM Analysis)</h1>
+
+<div class="cards">
+
+<div class="card">
+<h3>Champions</h3>
+<h2>1,500</h2>
+</div>
+
+<div class="card">
+<h3>Loyal Customers</h3>
+<h2>1,300</h2>
+</div>
+
+<div class="card">
+<h3>At Risk</h3>
+<h2>800</h2>
+</div>
+
+<div class="card">
+<h3>Lost Customers</h3>
+<h2>500</h2>
+</div>
+
+</div>
+
+<!-- Row 1 -->
+
+<div class="charts">
+
+<div class="chart-box">
+<h3>Customer Count by Segment</h3>
+<canvas id="segmentCountChart"></canvas>
+</div>
+
+<div class="chart-box">
+<h3>Revenue Contribution</h3>
+<canvas id="segmentRevenueChart"></canvas>
+</div>
+
+</div>
+
+<!-- Row 2 -->
+
+<div class="charts">
+
+<div class="chart-box">
+<h3>RFM Score Distribution</h3>
+<canvas id="rfmChart"></canvas>
+</div>
+
+<div class="chart-box">
+<h3>Segment Percentage</h3>
+<canvas id="segmentPieChart"></canvas>
+</div>
+
+</div>
+
+<div class="overview">
+
+<h2>Segment Insights</h2>
+
+<ul>
+
+<li>🏆 Champions generate the highest revenue.</li>
+
+<li>💎 Loyal customers contribute stable sales.</li>
+
+<li>⚠ At-risk customers need retention campaigns.</li>
+
+<li>❌ Lost customers require re-engagement offers.</li>
+
+<li>📈 Potential loyalists can become future champions.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<script src="js/segmentation.js"></script>
+
+</body>
+</html>

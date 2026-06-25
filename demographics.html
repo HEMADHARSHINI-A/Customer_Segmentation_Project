@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Customer Demographics</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+        <h2>📊 RFM Dashboard</h2>
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="demographics.html">
+                <i class="fa-solid fa-users"></i>
+                Demographics
+            </a>
+        </li>
+
+        <li>
+            <a href="segmentation.html">
+                <i class="fa-solid fa-chart-pie"></i>
+                Segmentation
+            </a>
+        </li>
+
+        <li>
+            <a href="details.html">
+                <i class="fa-solid fa-table"></i>
+                Customer Details
+            </a>
+        </li>
+
+        <li>
+            <a href="insights.html">
+                <i class="fa-solid fa-lightbulb"></i>
+                Insights
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main-content">
+
+<h1>Customer Demographics</h1>
+
+<div class="cards">
+
+<div class="card">
+<i class="fa-solid fa-dollar-sign"></i>
+<h3>Total Sales</h3>
+<h2>$1.77M</h2>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-users"></i>
+<h3>Total Customers</h3>
+<h2>60.4K</h2>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-globe"></i>
+<h3>Countries</h3>
+<h2>24</h2>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-cart-shopping"></i>
+<h3>Total Orders</h3>
+<h2>24.5K</h2>
+</div>
+
+</div>
+
+<div class="charts">
+
+<div class="chart-box">
+<h3>Sales By Gender</h3>
+<canvas id="genderChart"></canvas>
+</div>
+
+<div class="chart-box">
+<h3>Sales By Marital Status</h3>
+<canvas id="maritalChart"></canvas>
+</div>
+
+</div>
+
+<div class="chart-box" style="margin-top:20px;">
+<h3>Sales By Age Group</h3>
+<canvas id="ageChart"></canvas>
+</div>
+
+<div class="chart-box" style="margin-top:20px;">
+<h3>Country Analysis</h3>
+<canvas id="countryChart"></canvas>
+</div>
+
+</div>
+
+<script src="js/demographics.js"></script>
+
+</body>
+</html>
