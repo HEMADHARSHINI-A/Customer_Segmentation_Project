@@ -1,89 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Customer Details</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-</head>
-
-<body>
-
-<div class="sidebar">
-
-<div class="logo">
-<h2>📊 RFM Dashboard</h2>
-</div>
-
-<ul>
-
-<li>
-<a href="index.html">
-<i class="fa-solid fa-house"></i>
-Dashboard
-</a>
-</li>
-
-<li>
-<a href="demographics.html">
-<i class="fa-solid fa-users"></i>
-Demographics
-</a>
-</li>
-
-<li>
-<a href="segmentation.html">
-<i class="fa-solid fa-chart-pie"></i>
-Segmentation
-</a>
-</li>
-
-<li class="active">
-<a href="details.html">
-<i class="fa-solid fa-table"></i>
-Customer Details
-</a>
-</li>
-
-<li>
-<a href="insights.html">
-<i class="fa-solid fa-lightbulb"></i>
-Insights
-</a>
-</li>
-
-</ul>
-
-</div>
-
-<div class="main-content">
-
-<h1>Customer Details</h1>
-
-<div class="search-section">
-
-<input
-type="text"
-id="searchInput"
-placeholder="Search Customer..."
-onkeyup="searchCustomer()">
-
-</div>
-
 <div class="table-container">
 
-<table id="customerTable">
+<h2>Customer Details</h2>
+
+<input type="text" placeholder="Search Customer..." class="search-box">
+
+<table>
 
 <thead>
-
 <tr>
 <th>Customer ID</th>
 <th>Country</th>
@@ -91,7 +14,6 @@ onkeyup="searchCustomer()">
 <th>Revenue</th>
 <th>Segment</th>
 </tr>
-
 </thead>
 
 <tbody>
@@ -136,49 +58,8 @@ onkeyup="searchCustomer()">
 <td>Lost</td>
 </tr>
 
-<tr>
-<td>C006</td>
-<td>USA</td>
-<td>20</td>
-<td>$3,700</td>
-<td>Champion</td>
-</tr>
-
-<tr>
-<td>C007</td>
-<td>UK</td>
-<td>15</td>
-<td>$2,800</td>
-<td>Loyal</td>
-</tr>
-
 </tbody>
 
 </table>
 
 </div>
-
-<div class="overview">
-
-<h2>Top Customer Insights</h2>
-
-<ul>
-
-<li>🏆 Champions contribute the highest revenue.</li>
-
-<li>📈 Loyal customers purchase consistently.</li>
-
-<li>⚠ At Risk customers need special offers.</li>
-
-<li>❌ Lost customers have low engagement.</li>
-
-</ul>
-
-</div>
-
-</div>
-
-<script src="details.js"></script>
-
-</body>
-</html>
