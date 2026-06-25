@@ -3,18 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Customer Segmentation Dashboard</title>
 
 <link rel="stylesheet" href="style.css">
+
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
-
-<!-- Sidebar -->
 
 <div class="sidebar">
 
@@ -23,84 +24,42 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </div>
 
     <ul>
-        <li class="active">
-            <a href="index.html">
-                <i class="fa-solid fa-house"></i>
-                Dashboard
-            </a>
-        </li>
-
-        <li>
-            <a href="demographics.html">
-                <i class="fa-solid fa-users"></i>
-                Demographics
-            </a>
-        </li>
-
-        <li>
-            <a href="segmentation.html">
-                <i class="fa-solid fa-chart-pie"></i>
-                Segmentation
-            </a>
-        </li>
-
-        <li>
-            <a href="details.html">
-                <i class="fa-solid fa-table"></i>
-                Customer Details
-            </a>
-        </li>
-
-        <li>
-            <a href="insights.html">
-                <i class="fa-solid fa-lightbulb"></i>
-                Insights
-            </a>
-        </li>
+        <li class="active"><a href="index.html">Dashboard</a></li>
+        <li><a href="demographics.html">Demographics</a></li>
+        <li><a href="segmentation.html">Segmentation</a></li>
+        <li><a href="details.html">Customer Details</a></li>
+        <li><a href="insights.html">Insights</a></li>
     </ul>
 
 </div>
 
-<!-- Main -->
-
 <div class="main-content">
 
-    <div class="header">
-        <h1>Customer Segmentation Dashboard</h1>
-        <p>Customer Behavior Analysis using RFM Model</p>
-    </div>
-
-    <!-- KPI Cards -->
+    <h1>Customer Segmentation Dashboard</h1>
 
     <div class="cards">
 
         <div class="card">
-            <i class="fa-solid fa-users"></i>
             <h3>Total Customers</h3>
-            <h2>60.4K</h2>
+            <h2>60,400</h2>
         </div>
 
         <div class="card">
-            <i class="fa-solid fa-dollar-sign"></i>
             <h3>Total Revenue</h3>
             <h2>$1.77M</h2>
         </div>
 
         <div class="card">
-            <i class="fa-solid fa-cart-shopping"></i>
             <h3>Total Orders</h3>
-            <h2>24.5K</h2>
+            <h2>24,500</h2>
         </div>
 
         <div class="card">
-            <i class="fa-solid fa-chart-line"></i>
             <h3>Retention Rate</h3>
             <h2>84%</h2>
         </div>
 
     </div>
-
-    <!-- Charts -->
 
     <div class="charts">
 
@@ -116,35 +75,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     </div>
 
-    <!-- Project Overview -->
-
-    <div class="overview">
-
-        <h2>Project Overview</h2>
-
-        <p>
-            This project analyzes customer purchasing behavior
-            using Recency, Frequency and Monetary (RFM) Analysis.
-            Customers are grouped into different segments to help
-            businesses improve retention, increase revenue and
-            optimize marketing strategies.
-        </p>
-
-        <h3>Objectives</h3>
-
-        <ul>
-            <li>Analyze customer purchasing patterns</li>
-            <li>Calculate RFM scores</li>
-            <li>Segment customers into groups</li>
-            <li>Identify high-value customers</li>
-            <li>Provide business recommendations</li>
-        </ul>
-
-    </div>
-
 </div>
 
-<script src="js/dashboard.js"></script>
+<script src="dashboard.js"></script>
 
 </body>
 </html>
